@@ -16,7 +16,7 @@ def main(data):
 	fim = time.time() # tempo do fim do programa
 	img = data[:-4]+".png"
 	#plt.savefig(img, transparent = True) # salva figura
-	print("Tempo: ",fim - inicio) # printa duração do programa
+	#print("Tempo: ",fim - inicio) # printa duração do programa
 	#plt.show()
 
 def read_time_line(data):#leitura e tratamento da entrada txt
@@ -53,8 +53,7 @@ def organize_timeline(events):# distribui eventos na menor quantidade de linhas
 					break # não é necessário verificar para outras linhas
 			if verify == True:# se houve intersecção em todas linhas 
 				list_line.append([i])# adiciona nova linha
-	print("Qtd op: ",intersection)
-	print("linhas: ", len(list_line))
+	print("linhas: ", len(list_line),"::Comparações: ",intersection)
 	my_plot(list_line) # chama função que monta o gráfico com os eventos
 	return list_line
 

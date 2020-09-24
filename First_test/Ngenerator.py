@@ -2,7 +2,7 @@ import sys
 from random import randint
 ####################################################################
 # Rodar:
-# python3 gerador.py <quantidade_timelines> <quantidade maxima de eventos> <ano_inicio> <ano_final> "<nome>"
+# python3 Ngerador.py <quantidade_timelines> <quantidade maxima de eventos> <ano_inicio> <ano_final> "<nome>"
 ###################################################################
 def gerador_without_gap(num_timelines, num_max_events, init, end, name): #gerador sem tamanho max de evento
 	
