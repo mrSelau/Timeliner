@@ -13,3 +13,12 @@ Para realizar o primeiro teste:
   cd First_test
 
 leia o readMe da pasta
+
+
+
+# pesquisar gravador de eventos
+
+
+Montar gráficos
+Fazer o sagemath rodar
+encontrar casos envenenados
