@@ -17,7 +17,6 @@ def read_time_line(data):#leitura e tratamento da entrada txt
 	for i in f:
 		x = i.split(",") #cada evento vira uma lista: [nome,inicio,fim]
 		ix = np.arange(int(x[1]),int(x[2])+1,1)
-		print(ix)
 		list_event = list_event + [ix] #insere um evento na lista de eventos
 	return list_event
 
@@ -34,7 +33,7 @@ def geraGrafo(list_event):
 
 			if (intersec != set()) and (intersec != {first}) and (intersec != {last}):
 				count += 1
-				text += "("+str(x)+","+str(y)+")"+","+"\n"
+				text += str(x)+","+str(y)+"\n"
 	arquivo.write(text)
 
 data = sys.argv[1:][0]
