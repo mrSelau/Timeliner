@@ -5,6 +5,7 @@ import numpy as np
 def main(data, diretorio):
 	eventos = read_time_line(diretorio+"/"+data) # lê txt e cria lista de eventos ordenados decrescentemente
 	text = geraGrafo(eventos)
+	return text
 
 def read_time_line(data):#leitura e tratamento da entrada txt
 	f = open(data, 'r')
@@ -32,17 +33,28 @@ def geraGrafo(list_event):
 			if (intersec != set()) and (intersec != {first}) and (intersec != {last}):
 				count += 1
 				text += str(x)+","+str(y)+"\n"
-	arquivo.write(text)
+	return text
 
 #############################################################################################
 diretorio = "/home/mrselau/Documentos/Timeliner/Timeliner/Heuristics/500testes_500eventos"
 
 timelines = [timeline for timeline in os.listdir(diretorio) if timeline.endswith('.txt')] #lista de timelines em um txt
 
-graph = open("graph.sh", 'w') # txt com o nome de todas timelines
-text = "" # texto a ser colocado em timelines.txt
+aux = []
 for i in timelines:
-	arquivo = open("grafo"+i, 'w')
-	text +='\n'+ "sage LF.sagews grafo" +i
-graph.write(text[1:])
+	t = i.replace("teste_","_")
+	j = t.replace("events.txt","")
+	j = j.split("_")
+	aux.append((int(j[0]),i))
 
+aux.sort()
+
+execute = open("graph.sh", 'w') # txt com o nome de todas timelines
+text = "" # texto a ser colocado em timelines.txt
+for i in aux:
+	arquivo = open("grafo"+i[1], 'w')
+	graph = main(i[1],diretorio)
+	arquivo.write(graph)
+	text +='\n'+ "sage LF.sagews grafo" +i[1]
+	arquivo.close()
+execute.write(text[1:])

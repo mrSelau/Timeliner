@@ -12,8 +12,9 @@ def main(data):
 	eventos,first,last = read_time_line(data) # lê txt e cria lista de eventos ordenados decrescentemente
 	plot_config(first,last,data[0:-4]) # configura gráfico com medidas
 	inicio = time.time() # tempo de inicio do programa
-	a = organize_timeline(eventos) # distribui eventos na menor quantidade de linhas
+	lines, intersection = organize_timeline(eventos) # distribui eventos na menor quantidade de linhas
 	fim = time.time() # tempo do fim do programa
+	print(len(lines),":",intersection,":",fim - inicio)
 	img = data[:-4]+".png"
 	#plt.savefig(img, transparent = True) # salva figura
 	#print("Tempo: ",fim - inicio) # printa duração do programa
@@ -53,9 +54,8 @@ def organize_timeline(events):# distribui eventos na menor quantidade de linhas
 					break # não é necessário verificar para outras linhas
 			if verify == True:# se houve intersecção em todas linhas 
 				list_line.append([i])# adiciona nova linha
-	print(len(list_line),":",intersection)
 	my_plot(list_line) # chama função que monta o gráfico com os eventos
-	return list_line
+	return list_line, intersection
 
 def verify_intersection(list,var):
 	verify = False

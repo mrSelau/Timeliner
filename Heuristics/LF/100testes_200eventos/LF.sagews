@@ -46,7 +46,7 @@ def lf(g):
     #fim2 = time.time()
     #print("Tempo: ",fim2 - inicio2)
     
-    print(len(colour), ":", count1+count2, ":", count1, ":", count2, ":", inicio-fim)
+    print(len(colour), ":", count1+count2, ":", count1, ":", count2, ":", fim-inicio)
 
 input = sys.argv[1:][0]
 data = my_read(input)
