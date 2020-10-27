@@ -1,30 +1,5 @@
-1)
+1) Falar sobre minha busca local(MRNA, ela trava no primeiro otimo local)
 
-2)
-LF -> Guloso
-Sagemath -> Programação Linear Inteira?(isso seria guloso ou algo diferente, tipo ajuste e interpolação?)
+https://www.researchgate.net/profile/Haroldo_Santos/publication/264843292_METAHEURISTICA_BUSCA_TABU_PARA_O_PROBLEMA_DE_COLORACAO_DE_GRAFOS/links/54138e7c0cf2788c4b359a42/METAHEURISTICA-BUSCA-TABU-PARA-O-PROBLEMA-DE-COLORACAO-DE-GRAFOS.pdf
 
-2.2) É possível optar por programação dinâmica, backtracking, genética...
-
-
-3)https://www.sciencedirect.com/science/article/abs/pii/S0305054805000080 
-->  
-método EXATO baseado na decomposição linear do gráfico. A complexidade deste método é EXPONENCIAL de acordo com a largura linear do gráfico de entrada, mas linear de acordo com seu número de vértices. 
-obs: já utilizamos um método exponencial como comparação
-
-
-https://ieeexplore.ieee.org/document/5077128
- ->
-Neste artigo, são apresentados quatro algoritmos de aproximação baseados em autômatos de aprendizagem
-obs: Não consegui me aprofundar neste pois n foi possível ler, mas acredito que não seria nosso foco de comparação
-
-
-
-https://imada.sdu.dk/~marco/gcp/
-->
-Esta referencia cita muitas técnicas que tivemos como referencia como: LF, DSATUR, BROWN.
-Mas também parte pra correções dessas técnicas, e outras técnicas.
- 
-obs: Grande parte dos artigos cita as técnidas que utilizaremos para comparação, 
-as ténicas mais novas ainda se baseiam nestas, e acho que não teriamos tempo de abordar todos tipos de técnicas possíveis
-
+2) Compreeder função objetivo
