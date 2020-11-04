@@ -3,3 +3,20 @@
 https://www.researchgate.net/profile/Haroldo_Santos/publication/264843292_METAHEURISTICA_BUSCA_TABU_PARA_O_PROBLEMA_DE_COLORACAO_DE_GRAFOS/links/54138e7c0cf2788c4b359a42/METAHEURISTICA-BUSCA-TABU-PARA-O-PROBLEMA-DE-COLORACAO-DE-GRAFOS.pdf
 
 2) Compreeder função objetivo
+
+3) encontrei um simulated annealling
+
+Prox quinta
+
+1) Introduçaõ e o problema
+Exemplinhos de timeline
+Conexão com a coloração
+Joao Oliveira10:11
+Exemplinhos da conexão
+Propostas de solução
+Como avalia resultados
+Bibliografia
+
+modelo cartaz pronto + outro algoritmo
+
+Quantos professores na banca?
