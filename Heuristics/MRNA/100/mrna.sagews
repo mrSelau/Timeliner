@@ -14,11 +14,13 @@ def my_read(data):
     return graph
 
 def procura_aresta(list, no):
+    count = 0
     for i in list:
         intersec = set(no[0]).intersection(set(i[1]))
+        count += 1
         if intersec != set():
-            return True
-    return False
+            return True,count
+    return False, count
 
 
 def tabusearch(g, btMax):
@@ -43,7 +45,7 @@ def tabusearch(g, btMax):
 
         aux_no = list_iter[cor1][no]
 
-        aresta = procura_aresta(list_iter[cor2], aux_no)
+        aresta, count = procura_aresta(list_iter[cor2], aux_no)
 
         if aresta == False:
             del(list_iter[cor1][no])
@@ -57,7 +59,7 @@ def tabusearch(g, btMax):
                 best_iter = iter
                 best_list = list_iter[:]
                 cores = len(list_iter)
-        iter += 1
+        iter += count
 
     return cores , iter
         

@@ -20,3 +20,5 @@ Bibliografia
 modelo cartaz pronto + outro algoritmo
 
 Quantos professores na banca?
+----------------------
+2) Exemplos de timeline (estúpido e do algoritmo)
